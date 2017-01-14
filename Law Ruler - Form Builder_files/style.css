@@ -1,0 +1,149 @@
+/*
+	Stylesheet for examples by DevHeart.
+	http://devheart.org/
+
+	Article title:	jQuery: Customizable layout using drag n drop
+	Article URI:	http://devheart.org/articles/jquery-customizable-layout-using-drag-and-drop/
+
+	Example title:	2. Saving and loading items
+	Example URI:	http://devheart.org/examples/jquery-customizable-layout-using-drag-and-drop/2-saving-and-loading-items/index.html
+*/
+
+/*
+	Typography
+------------------------------------------------------------------- */
+
+p {margin-bottom: 1em;}
+
+
+/*
+	Forms
+------------------------------------------------------------------- */
+
+.input-button {
+	background-color: #E2E2E2;
+	border: 1px outset #AAA;
+	color: #123;
+	font-weight: bold;
+	padding: 4px 5px;
+}
+.input-button:active {border-style: inset;}
+
+
+/*
+	Alignment
+------------------------------------------------------------------- */
+
+/* Floats */
+
+.left {float: left;}
+.right {float: right;}
+
+.clear,.clearer {clear: both;}
+.clearer {
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+}
+
+
+/*
+	Example specifics
+------------------------------------------------------------------- */
+
+/* Layout */
+
+#center-wrapper {
+	margin: 0 auto;
+	width: 920px;
+}
+
+
+/* Columns */
+
+.column {
+	margin-left: 2%;
+	width: 32%;
+}
+.column.first {margin-left: 0;}
+
+
+/* Sortable items */
+
+.sortable-list {
+	/*background-color: #005aa1;
+	*/
+
+	list-style: none;
+	margin: 0;
+	min-height: 60px;
+	padding: 10px;
+	width:100%; 
+		float:left;
+
+	
+}
+/*.sortable-item {
+
+	background-color:#0000FF;
+	
+	border: 1px solid #CCCCCC;
+	cursor: move;
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding: 0px 0;
+	height:100px;
+	float:left;
+	display: table-cell;
+	overflow:hidden;
+	
+	width:100%;
+
+}*/
+.sortable-item {
+    /* background-color: #0000FF; */
+    border: 1px solid #CCCCCC;
+    cursor: move;
+    display: block;
+    font-weight: normal;
+    margin-bottom: 5px;
+    padding: 0px 0;
+    height: 100px;
+    float: left;
+    display: table-cell;
+    overflow: hidden;
+    /* width: 100%; */
+    margin: 10px;
+	background:#fcfafa; 
+	    box-shadow: 5px 5px 2px #e9e7e7;
+		font-size:14px;
+
+}
+
+
+/* Disabled list */
+
+#example-2-4 .sortable-list {background-color: #CCC;}
+#example-2-4 .sortable-item {cursor: default;}
+
+.sortable-item-next {
+    font-weight: normal;
+    margin-bottom: 5px;
+    padding: 10px 0;
+    float: left;
+/*	background:#fcfafa; */
+/*	    box-shadow: 5px 5px 2px #e9e7e7; */
+		font-size:14px;
+	
+
+}
+.sortable-item-next input.input, textarea.input {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    line-height: 16px;
+	width:70% !important;
+	margin-left:10px;
+
+}
