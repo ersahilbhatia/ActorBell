@@ -1,0 +1,7 @@
+This is test file. please ignore it. edited in master mode
+
+This line is added in branch 2
+new line 1
+new line 2
+new line 3
+new line 4
